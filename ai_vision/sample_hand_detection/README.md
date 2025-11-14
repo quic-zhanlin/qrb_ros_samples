@@ -1,6 +1,6 @@
 <div align="center">
   <h1>AI Samples - Hand Landmark Detection</h1>
-  <img src="./resource/result.gif" style="zoom:80%;" />      
+  <img src="https://github.com/qualcomm-qrb-ros/qrb_ros_samples/blob/gif/ai_vision/sample_hand_detection/resource/result.gif" style="zoom:80%;" />      
   <a href="https://ubuntu.com/download/qualcomm-iot" target="_blank"><img src="https://img.shields.io/badge/Qualcomm%20Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Qualcomm Ubuntu"></a>
   <a href="https://docs.ros.org/en/jazzy/" target="_blank"><img src="https://img.shields.io/badge/ROS%20Jazzy-1c428a?style=for-the-badge&logo=ros&logoColor=white" alt="Jazzy"></a>
 </div>
@@ -112,6 +112,10 @@ ros2 launch sample_hand_detection launch_with_image_publisher.py image_path:=<pa
 # Launch the sample hand detection node with qrb_ros_camera ros node.
 ros2 launch sample_hand_detection launch_with_qrb_ros_camera.py model_path:=/opt/model/
 ```
+
+**Note**  
+> This sample demonstrates how to build a pipeline using our ROS nodes. Due to the large data transmission of AI model inputs and outputs within ROS, prolonged operation may lead to reduced frame rates. If this happens, please relaunch the ROS nodes to restore normal performance.
+
 </details>
 
 ## 👨‍💻 Build from source
